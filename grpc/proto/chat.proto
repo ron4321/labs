@@ -1,0 +1,14 @@
+
+syntax = "proto3";
+
+service Chat {
+    rpc Send(ChatMessageRequest) returns (ChatMessageResponse);
+}
+
+message ChatMessageResponse {
+    string body = 1;
+}
+
+message ChatMessageRequest {
+    string body = 1;
+}
